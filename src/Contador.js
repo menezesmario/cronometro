@@ -72,7 +72,7 @@ class Contador extends React.Component {
         return(
             <div>
                 <h1>{this.state.minutos}:{this.state.segundos}</h1>
-                <Botao onClick={() => { this.zerarCronometro() }} label="Zerar"/>
+                <Botao onClick={() => { this.zerarCronometro() }} label="Reiniciar"/>
                 <Botao onClick={() => { this.pausarCronometro() }} label={this.state.nameStop}/>
                 <Botao onClick={() => { this.parciais() }} label="Parcial"/>
                 <LabelCronometro name={this.state.parcial}/>
